@@ -1,0 +1,67 @@
+.container
+		h1 = @commune.name.capitalize + ", " + @neighbourhood.to_s.capitalize
+
+		hr
+
+		table.table.table-striped
+			thead
+				tr
+					td: strong Onderdeel
+					td: strong Score
+			tbody
+				tr
+					td Leefbaarometer 2002
+					td = float_to_description(@neighbourhood.liveability_score_2002)
+				tr
+					td Leefbaarometer 2008
+					td = float_to_description(@neighbourhood.liveability_score_2008)
+				tr
+					td Leefbaarometer 2012
+					td = float_to_description(@neighbourhood.liveability_score_2012)
+				tr
+					td Leefbaarometer 2014
+					td = float_to_description(@neighbourhood.liveability_score_2014)
+
+		table.table.table-striped
+			thead
+				tr
+					td: strong Dimensie
+					td: strong Score ten opzichte van gemiddelde (4.1544)
+			tbody
+				tr
+					td Score dimensie woningen 2012
+					td = float_to_description(@neighbourhood.houses_score_2012)
+				tr
+					td Score dimensie bewoners 2012
+					td = float_to_description(@neighbourhood.inhabitants_score_2012)
+				tr
+					td Score dimensie voorzieningen 2012
+					td = float_to_description(@neighbourhood.services_score_2012)
+				tr
+					td Score dimensie veiligheid 2012
+					td = float_to_description(@neighbourhood.safety_score_2012)
+				tr
+					td Score dimensie fysieke omgeving 2012
+					td = float_to_description(@neighbourhood.fysical_environment_score_2012)
+
+		table.table.table-striped
+			thead
+				tr
+					td: strong Dimensie
+					td: strong Score ten opzichte van gemiddelde (4.1544)
+			tbody
+				tr
+					td Score dimensie woningen 2014
+					td = float_to_description(@neighbourhood.houses_score_2014)
+				tr
+					td Score dimensie bewoners 2014
+					td = float_to_description(@neighbourhood.inhabitants_score_2014)
+				tr
+					td Score dimensie voorzieningen 2014
+					td = float_to_description(@neighbourhood.services_score_2014)
+				tr
+					td Score dimensie veiligheid 2014
+					td = float_to_description(@neighbourhood.safety_score_2014)
+				tr
+					td Score dimensie fysieke omgeving 2014
+					td = float_to_description(@neighbourhood.fysical_environment_score_2014)

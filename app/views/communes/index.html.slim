@@ -1,0 +1,9 @@
+.container
+  table.table.table-striped
+    thead
+      tr
+        th Gemeente
+    tbody
+      - @communes.each do |commune|
+        tr
+          td = link_to commune.name, commune_neighbourhoods_path(commune)

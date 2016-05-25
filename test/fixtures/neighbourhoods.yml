@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  liveability_score_2008: MyString
+  liveability_score_2002: MyString
+  liveability_score_2012: MyString
+  liveability_score_2014: MyString
+  houses_score_2012: MyString
+  inhabitants_score_2012: MyString
+  services_score_2012: MyString
+  safety_score_2012: MyString
+  fysical_environment_score_2012: MyString
+  houses_score_2014: MyString
+
+two:
+  liveability_score_2008: MyString
+  liveability_score_2002: MyString
+  liveability_score_2012: MyString
+  liveability_score_2014: MyString
+  houses_score_2012: MyString
+  inhabitants_score_2012: MyString
+  services_score_2012: MyString
+  safety_score_2012: MyString
+  fysical_environment_score_2012: MyString
+  houses_score_2014: MyString

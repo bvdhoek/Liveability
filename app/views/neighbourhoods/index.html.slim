@@ -1,0 +1,9 @@
+.container
+  table.table.table-striped
+    thead
+      tr
+        th Buurt
+    tbody
+      - @neighbourhoods.each do |hood|
+        tr
+          td = link_to hood.to_s, commune_neighbourhood_path(hood.commune, hood)
